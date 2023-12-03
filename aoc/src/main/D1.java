@@ -10,8 +10,8 @@ public class D1 {
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream is = classloader.getResourceAsStream("input/d1b.txt");
         InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
-
         BufferedReader reader = new BufferedReader(streamReader);
+
         Integer sum = 0;
         for (String line; (line = reader.readLine()) != null;) {
             String trimmed = line;

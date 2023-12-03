@@ -10,7 +10,7 @@ public class D2 {
     record Round(Integer red, Integer green, Integer blue) { }
     public static void main(String[] args) throws IOException {
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-        InputStream is = classloader.getResourceAsStream("input/d2b.txt");
+        InputStream is = classloader.getResourceAsStream("input/d2.txt");
         InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
         BufferedReader reader = new BufferedReader(streamReader);
 

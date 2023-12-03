@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class D3 {
     public static void main(String[] args) throws IOException {
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-        InputStream is = classloader.getResourceAsStream("input/d3b.txt");
+        InputStream is = classloader.getResourceAsStream("input/d3.txt");
         InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
         BufferedReader reader = new BufferedReader(streamReader);
 

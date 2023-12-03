@@ -8,7 +8,7 @@ import java.util.List;
 public class D1 {
     public static void main(String[] args) throws IOException {
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-        InputStream is = classloader.getResourceAsStream("input/d1b.txt");
+        InputStream is = classloader.getResourceAsStream("input/d1.txt");
         InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
         BufferedReader reader = new BufferedReader(streamReader);
 
